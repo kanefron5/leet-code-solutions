@@ -15,8 +15,8 @@ fun myAtoi(s: String): Int {
     var signFlag = 1
 
     var cursor = 0
-    if (cursor <= trim.lastIndex && trim[cursor] == '+') cursor++
-    else if (cursor <= trim.lastIndex && trim[cursor] == '-') {
+    if (trim[cursor] == '+') cursor++
+    else if (trim[cursor] == '-') {
         cursor++
         signFlag = -1
     }
